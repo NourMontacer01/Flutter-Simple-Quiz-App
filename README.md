@@ -5,10 +5,10 @@ Users start the quiz, answer multiple-choice questions, and view their score and
 The app features vibrant colors 🌈, smooth transitions, and a restart option for a seamless experience.
 
 ## 📸 Screenshots
-<div style="display: flex; justify-content: space-around; gap: 10px;">
-  <img src="assets/images/startScreen.png" alt="Start Screen" width="300" />
-  <img src="assets/images/questionsScreen.png" alt="Questions Screen" width="300" />
-  <img src="assets/images/resultScreen.png" alt="Result Screen" width="300" />
+<div style="display: flex; justify-content: space-around; gap: 20px;">
+  <img src="assets/images/startScreen.png" alt="Start Screen" width="150" />
+  <img src="assets/images/questionsScreen.png" alt="Questions Screen" width="150" />
+  <img src="assets/images/resultScreen.png" alt="Result Screen" width="150" />
 </div>
 
 
