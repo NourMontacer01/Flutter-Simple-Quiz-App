@@ -28,11 +28,16 @@ A Flutter-based quiz application that allows users to take a quiz, view their sc
 
 
 2. Navigate to the project directory:
-cd flutter-quiz-app
+   ```bash
+    cd flutter-quiz-app
+
 3. Install dependencies:
-flutter pub get
+   ```bash
+   flutter pub get
+
 4. Run the app:
-flutter run
+   ```bash
+   flutter run
 
 Make sure you have Flutter and Dart installed before running the app.
 
