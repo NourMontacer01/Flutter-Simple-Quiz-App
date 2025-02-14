@@ -3,6 +3,10 @@ A Flutter-based quiz app with three main screens: Start, Questions, and Results.
 Users start the quiz, answer multiple-choice questions, and view their score and a summary of answers on the Results Screen.
 The app features vibrant colors 🌈, smooth transitions, and a restart option for a seamless experience.
 
+![Screenshot 1](assets/images/startScreen.png)
+![Screenshot 2](assets/images/questionsScreen.png)
+![Screenshot 3](assets/images/resultScreen.png)
+
 # quiz
 
 A new Flutter project.
