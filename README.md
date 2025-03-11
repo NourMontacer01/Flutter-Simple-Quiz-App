@@ -11,10 +11,13 @@ MealsApp is a **multi-screen Flutter application** that allows users to **browse
 ✅ State management with Riverpod  
 
 ## 📸 Screenshots  
-![Home](assets/images/startScreen.png)  
-![Questions Screen](assets/images/questionsScreen.png)  
-![AnswersResults](assets/images/resultScreen.png)  
-
+<table>
+  <tr>
+    <td><img src="assets/images/startScreen.png" width="300" height="200"></td>
+    <td><img src="assets/images/questionsScreen.png" width="300" height="200"></td>
+    <td><img src="assets/images/resultScreen.png" width="300" height="200"></td>
+  </tr>
+</table>
 
 ## 🛠 Tech Stack  
 - **Flutter** (latest version)  
