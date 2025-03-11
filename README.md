@@ -12,9 +12,9 @@ MealsApp is a **multi-screen Flutter application** that allows users to **browse
 
 ## 📸 Screenshots  
 <div style="display: flex; justify-content: space-between; gap: 10px;">
-  <img src="assets/images/startScreen.png" width="32%" style="height: 250px; object-fit: contain;" />
-  <img src="assets/images/questionsScreen.png" width="32%" style="height: 250px; object-fit: contain;" />
-  <img src="assets/images/resultScreen.png" width="32%" style="height: 250px; object-fit: contain;" />
+  <img src="assets/images/startScreen.png" width="32%" style="height: 350px; object-fit: contain;" />
+  <img src="assets/images/questionsScreen.png" width="32%" style="height: 350px; object-fit: contain;" />
+  <img src="assets/images/resultScreen.png" width="32%" style="height: 350px; object-fit: contain;" />
 </div>
 
 ## 🛠 Tech Stack  
