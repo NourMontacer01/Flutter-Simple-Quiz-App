@@ -1,36 +1,30 @@
-# Flutter-Simple-Quiz-App 🧠📱
-## 📋 Overview
-A Flutter-based quiz app with three main screens: Start, Questions, and Results.
-Users start the quiz, answer multiple-choice questions, and view their score and a summary of answers on the Results Screen.
-The app features vibrant colors 🌈, smooth transitions, and a restart option for a seamless experience.
+# 🍽️ MealsApp - A Flutter Meals Browser  
 
-## 📸 Screenshots
-<div style="display: flex; justify-content: space-around; gap: 20px;">
-  <img src="assets/images/startScreen.png" alt="Start Screen" width="150" />
-  <img src="assets/images/questionsScreen.png" alt="Questions Screen" width="150" />
-  <img src="assets/images/resultScreen.png" alt="Result Screen" width="150" />
-</div>
+MealsApp is a **multi-screen Flutter application** that allows users to **browse meals by category, apply filters**, and view detailed recipes with **ingredients, preparation steps, and tips**. It features **smooth animations** and uses **Riverpod** for state management. Users can also **favorite meals** for quick access.  
 
+## 🚀 Features  
+✅ Browse meals by category  
+✅ Apply filters (gluten-free, vegetarian, vegan, etc.)  
+✅ View detailed meal information  
+✅ Add meals to favorites  
+✅ Smooth Flutter animations  
+✅ State management with Riverpod  
 
+## 📸 Screenshots  
 
+![Home Screen](screenshots/Home.png)  
+![Meals](screenshots/Category.png)  
+![Meal Details](screenshots/Details.png)  
+![Side Drawer](screenshots/SideDrawer.png)  
 
-# quiz
+## 🛠 Tech Stack  
+- **Flutter** (latest version)  
+- **Dart**  
+- **Riverpod** (state management)  
+- **Material Design**  
+- **Animations** (`AnimatedBuilder`, `Hero`, `SlideTransition`, etc.)  
 
-A new Flutter project.
-
-A Flutter-based quiz application that allows users to take a quiz, view their score, and review their answers in a clean, user-friendly interface.
-
-##  🌟 Features
-- Multiple-choice quiz with random questions ❓.
-- Displays score and a detailed summary at the end 🏆.
-- Restart option to retake the quiz 🔁 .
-- Smooth transitions and vibrant UI ✨.
-
-
-
-##  🚀 Getting Started 
-
-##  🛠️ Installation  
+## 🔧 Installation  
 
 
 1. Clone the repository:
