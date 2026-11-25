@@ -15,7 +15,7 @@ class QuestionsSummary extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: summaryData.map(
             (data) {
-              bool isCorrect = data['corerct_answer'] == data['chosen_answer'];
+              bool isCorrect = data['correct_answer'] == data['chosen_answer'];
               return Card(
                 elevation: 4,
                 margin: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
@@ -53,7 +53,7 @@ class QuestionsSummary extends StatelessWidget {
                             ),
                             SizedBox(height: 5),
                             Text(
-                              'Correct Answer: ${data['corerct_answer']}',
+                              'Correct Answer: ${data['correct_answer']}',
                               style: TextStyle(
                                 fontSize: 12,
                                 color: Colors.green.shade700,

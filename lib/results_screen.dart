@@ -20,7 +20,7 @@ class ResultsScreen extends StatelessWidget {
         {
           'question_index': i,
           'question': questions[i].question,
-          'corerct_answer': questions[i].answers[0],
+          'correct_answer': questions[i].answers[0],
           'chosen_answer': chosenAnswers[i],
         },
       );
@@ -32,7 +32,7 @@ class ResultsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final int totalQuestions = questions.length;
     final int correctAnswers = getSummaryData()
-        .where((data) => data['corerct_answer'] == data['chosen_answer'])
+        .where((data) => data['correct_answer'] == data['chosen_answer'])
         .length;
 
     return Scaffold(
