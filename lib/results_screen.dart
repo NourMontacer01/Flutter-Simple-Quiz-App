@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:quiz/data/questions.dart';
 import 'package:quiz/questions_summary.dart';
-import 'package:quiz/quiz.dart';
-import 'package:quiz/start_screen.dart'; // Make sure this is imported
 
 class ResultsScreen extends StatelessWidget {
-  const ResultsScreen({Key? key, required this.chosenAnswers})
-      : super(key: key);
+  const ResultsScreen({
+    super.key,
+    required this.chosenAnswers,
+    required this.onRestart,
+  });
 
   final List<String> chosenAnswers;
+  final void Function() onRestart;
 
   List<Map<String, Object>> getSummaryData() {
     final List<Map<String, Object>> summaryData = [];
@@ -75,13 +77,8 @@ class ResultsScreen extends StatelessWidget {
                 QuestionsSummary(summaryData: getSummaryData()),
                 const SizedBox(height: 30),
                 ElevatedButton.icon(
-                  onPressed: () {
-                    // Navigate to the StartScreen when the button is pressed
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (context) => Quiz()),
-                    );
-                  }, // Trigger the restart game function
+                  // Go back to the start screen and reset the chosen answers
+                  onPressed: onRestart,
                   label: const Text('Restart Game'),
                   icon: const Icon(Icons.refresh),
                 ),

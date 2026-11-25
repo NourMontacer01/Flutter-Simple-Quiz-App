@@ -61,6 +61,7 @@ class _Quiz extends State<Quiz> {
               )
             : ResultsScreen(
                 chosenAnswers: selectedAnswers,
+                onRestart: rechangeScreen,
               );
 
     return MaterialApp(
