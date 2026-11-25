@@ -1,72 +1,71 @@
-# 🍽️ MealsApp - A Flutter Meals Browser  
+# 🧠 S-Quiz — Flutter Quiz Game
 
-MealsApp is a **multi-screen Flutter application** that allows users to **browse meals by category, apply filters**, and view detailed recipes with **ingredients, preparation steps, and tips**. It features **smooth animations** and uses **Riverpod** for state management. Users can also **favorite meals** for quick access.  
+[![Flutter CI](https://github.com/NourMontacer01/Flutter-Simple-Quiz-App/actions/workflows/flutter.yml/badge.svg)](https://github.com/NourMontacer01/Flutter-Simple-Quiz-App/actions/workflows/flutter.yml)
+![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.6-0175C2?logo=dart&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## 🚀 Features  
-✅ Browse meals by category  
-✅ Apply filters (gluten-free, vegetarian, vegan, etc.)  
-✅ View detailed meal information  
-✅ Add meals to favorites  
-✅ Smooth Flutter animations  
-✅ State management with Riverpod  
+A small multi-screen quiz game that tests your knowledge of **Flutter and Dart**.
+Answer each question, then get a colour-coded summary showing what you got right and what the correct answer was.
 
-## 📸 Screenshots  
-<div style="display: flex; justify-content: space-between; gap: 10px;">
-  <img src="assets/images/startScreen.png" width="32%" style="height: 600px; object-fit: contain;" />
-  <img src="assets/images/questionsScreen.png" width="32%" style="height: 600px; object-fit: contain;" />
-  <img src="assets/images/resultScreen.png" width="32%" style="height: 600px; object-fit: contain;" />
-</div>
+<p align="center">
+  <img src="assets/images/startScreen.png" width="30%" alt="Start screen" />
+  <img src="assets/images/questionsScreen.png" width="30%" alt="Question screen" />
+  <img src="assets/images/resultScreen.png" width="30%" alt="Results screen" />
+</p>
 
-## 🛠 Tech Stack  
-- **Flutter** (latest version)  
-- **Dart**  
-- **Riverpod** (state management)  
-- **Material Design**  
-- **Animations** (`AnimatedBuilder`, `Hero`, `SlideTransition`, etc.)  
+## ✨ Features
 
-## 🔧 Installation  
+- **Start → Questions → Results** flow driven by a single stateful widget
+- Answers are **shuffled** for every question, so the right one is never in the same place
+- **Score** at the end (`Your Score: 4/5`) and a scrollable **summary** of each question:
+  green when you were right, red when you were wrong, with the correct answer shown
+- **End Game** during the quiz and **Restart Game** from the results screen
+- Custom typography with **Google Fonts**
 
+## 🧱 How it works
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/flutter-quiz-app.git
+| File | Role |
+| --- | --- |
+| `lib/quiz.dart` | Holds the app state: active screen and chosen answers |
+| `lib/start_screen.dart` | Landing screen with the Start button |
+| `lib/questions_screen.dart` | Shows one question at a time with shuffled answers |
+| `lib/results_screen.dart` | Computes the score and shows the summary |
+| `lib/questions_summary.dart` | Per-question result cards |
+| `lib/data/questions.dart` | The questions. **The first answer of each list is the correct one** |
+| `lib/models/quiz_question.dart` | `QuizQuestion` model and answer shuffling |
 
+### Add your own questions
 
-2. Navigate to the project directory:
-   ```bash
-    cd flutter-quiz-app
+Append a `QuizQuestion` to `lib/data/questions.dart`, putting the correct answer **first**:
 
-3. Install dependencies:
-   ```bash
-   flutter pub get
+```dart
+QuizQuestion(
+  'Which widget rebuilds when its state changes?',
+  ['StatefulWidget', 'StatelessWidget', 'InheritedWidget', 'Container'],
+),
+```
 
-4. Run the app:
-   ```bash
-   flutter run
+## 🚀 Getting started
 
-Make sure you have Flutter and Dart installed before running the app.
+Requirements: [Flutter](https://docs.flutter.dev/get-started/install) 3.27+ (Dart 3.6+).
 
+```bash
+git clone https://github.com/NourMontacer01/Flutter-Simple-Quiz-App.git
+cd Flutter-Simple-Quiz-App
+flutter pub get
+flutter run
+```
 
-##  🎮 Usage 
+## 🧪 Tests
 
-Launch the app to start the quiz.
-Answer each question and view your score at the end.
-You can restart the quiz after completing it.
+```bash
+flutter test
+```
+
+The suite covers answer shuffling, starting the quiz, a perfect run, a wrong run, **Restart Game** and **End Game**.
+It runs on every push through GitHub Actions together with `flutter analyze`.
+
 ## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-
-## 💖 Acknowledgments 
-Flutter for building beautiful UIs.
-Google Fonts for typography. """
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[MIT](LICENSE) © Nour Montacer
